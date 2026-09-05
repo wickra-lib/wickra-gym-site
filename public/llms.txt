@@ -1,0 +1,12 @@
+# Wickra Gym
+
+> A Gymnasium-compatible, microstructure-aware backtest environment: precompute the dataset to a fixed feature tensor once, and every step() becomes a pure array index.
+
+Wickra Gym exposes a Gymnasium-compatible environment over a deterministic backtest. The dataset is precomputed once into a fixed feature tensor drawn from the Wickra core's 514 streaming indicators, so `step()` performs no indicator work and costs the same regardless of how wide the feature set is. The same seed and spec replay the identical episode. Released under the MIT OR Apache-2.0 license.
+
+## Source
+- [GitHub](https://github.com/wickra-lib/wickra-gym): Source, issues, and releases.
+
+## Ecosystem
+- [Wickra](https://wickra.org): The core streaming-indicator library the ecosystem is built on.
+- [Docs](https://docs.wickra.org): Documentation for the Wickra core.
