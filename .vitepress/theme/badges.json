@@ -3,7 +3,7 @@
     "alt": "CI",
     "href": "https://github.com/wickra-lib/wickra-gym/actions/workflows/ci.yml",
     "file": "/badges/ci.svg",
-    "width": 83,
+    "width": 91,
     "height": 20
   },
   {
@@ -18,6 +18,20 @@
     "href": "https://codecov.io/gh/wickra-lib/wickra-gym",
     "file": "/badges/codecov.svg",
     "width": 112,
+    "height": 20
+  },
+  {
+    "alt": "GitHub release",
+    "href": "https://github.com/wickra-lib/wickra-gym/releases/latest",
+    "file": "/badges/release.svg",
+    "width": 111,
+    "height": 20
+  },
+  {
+    "alt": "crates.io",
+    "href": "https://crates.io/crates/wickra-gym",
+    "file": "/badges/crates.svg",
+    "width": 119,
     "height": 20
   },
   {
