@@ -21,6 +21,41 @@
     "height": 20
   },
   {
+    "alt": "PyPI",
+    "href": "https://pypi.org/project/wickra-gym/",
+    "file": "/badges/pypi.svg",
+    "width": 95,
+    "height": 20
+  },
+  {
+    "alt": "npm",
+    "href": "https://www.npmjs.com/package/wickra-gym",
+    "file": "/badges/npm.svg",
+    "width": 97,
+    "height": 20
+  },
+  {
+    "alt": "NuGet",
+    "href": "https://www.nuget.org/packages/Wickra.Gym",
+    "file": "/badges/nuget.svg",
+    "width": 103,
+    "height": 20
+  },
+  {
+    "alt": "Maven Central",
+    "href": "https://central.sonatype.com/artifact/org.wickra/wickra-gym",
+    "file": "/badges/maven.svg",
+    "width": 153,
+    "height": 20
+  },
+  {
+    "alt": "Go module",
+    "href": "https://pkg.go.dev/github.com/wickra-lib/wickra-gym-go",
+    "file": "/badges/go.svg",
+    "width": 85,
+    "height": 20
+  },
+  {
     "alt": "License: MIT OR Apache-2.0",
     "href": "https://github.com/wickra-lib/wickra-gym#license",
     "file": "/badges/license.svg",
