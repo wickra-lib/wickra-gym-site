@@ -1,27 +1,49 @@
-# Wickra Gym — site
+<p align="center">
+  <a href="https://gym.wickra.org"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/wickra-banner.webp?v=514-7" alt="Wickra Gym — a Gymnasium-compatible, microstructure-aware backtest environment with O(1) steps for deterministic RL rollouts" width="100%"></a>
+</p>
 
-The marketing site for [Wickra Gym](https://github.com/wickra-lib/wickra-gym), served at
-[gym.wickra.org](https://gym.wickra.org).
+[![Built on Wickra](https://img.shields.io/badge/built%20on-wickra-3b82f6)](https://github.com/wickra-lib/wickra)
+[![Docs](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-gym/docs.svg)](https://gym.wickra.org)
+[![License: MIT OR Apache-2.0](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-gym/license.svg)](https://github.com/wickra-lib/wickra-gym#license)
+[![Built with VitePress](https://img.shields.io/badge/built%20with-VitePress-5c73e7?logo=vite&logoColor=white)](https://vitepress.dev)
 
-Built with [VitePress](https://vitepress.dev/) and deployed from `main` by
-Cloudflare Pages.
+---
+
+Source for the Wickra Gym site (**[gym.wickra.org](https://gym.wickra.org)**): hero, per-language API overviews and benchmarks.
+Built with [VitePress](https://vitepress.dev).
+
+The structure mirrors [webpage](https://github.com/wickra-lib/webpage)
+(wickra.org) and [wickra-docs](https://github.com/wickra-lib/wickra-docs)
+(docs.wickra.org): shared header, footer, theme, badge pipeline and workflows.
+**Wickra Gym** — a Gymnasium-compatible, microstructure-aware backtest environment with O(1) steps for deterministic RL rollouts. The library itself is
+[`wickra-lib/wickra-gym`](https://github.com/wickra-lib/wickra-gym); its README carries the install line and a quick start for every language.
+
+## Develop
 
 ```bash
 npm install
-npm run dev      # local preview
-npm run build    # production build into .vitepress/dist
+npm run dev      # local dev server
+npm run build    # production build (also fails on dead internal links)
+npm run preview  # preview the production build
 ```
 
-## Layout
+## What is kept current by workflow
 
-| Path | What it is |
-|---|---|
-| `index.md` | the landing page |
-| `about.md` | what the product does and why it exists |
-| `privacy.md`, `security.md` | site policies |
-| `.vitepress/` | config and the shared Wickra theme |
-| `public/` | icons, badges and static assets |
+- **The released version** — the version menu in the nav, the Maven snippet on the landing page and the Java API page — is pulled hourly from [wickra-gym's latest release](https://github.com/wickra-lib/wickra-gym/releases/latest) by `sync-from-gym.yml`.
+- **The status badges** in the footer are snapshots refreshed hourly by `refresh-badges.yml`; the SVGs in `public/badges/` are generated, not edited.
+
+Everything else — the copy, the API pages, the benchmark figures (from the repository's `BENCHMARKS.md`) — is edited here by hand.
+
+## Deploy
+
+Static build via Cloudflare Pages (Git integration, no deploy secret):
+
+- **Build command:** `npm run build`
+- **Output directory:** `.vitepress/dist`
+- **Node version:** 22 (`.nvmrc`)
+
+Custom domain `gym.wickra.org` is configured in the Cloudflare Pages dashboard.
 
 ## License
 
-MIT OR Apache-2.0, matching the product it documents.
+Dual-licensed under [MIT](LICENSE-MIT) or [Apache-2.0](LICENSE-APACHE), at your option.
