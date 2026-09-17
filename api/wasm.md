@@ -10,7 +10,7 @@ npm install wickra-gym-wasm
 ```
 
 ```js
-import init, { Env } from "./pkg/wickra_gym_wasm.js";
+import init, { Env } from "wickra-gym-wasm";
 
 await init();
 
