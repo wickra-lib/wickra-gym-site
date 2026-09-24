@@ -42,7 +42,7 @@ const installTabs = [
   { label: 'C', lang: 'bash', code: '# prebuilt header + library from GitHub releases:\n# github.com/wickra-lib/wickra-gym/releases' },
   { label: 'C#', lang: 'bash', code: 'dotnet add package Wickra.Gym' },
   { label: 'Go', lang: 'bash', code: 'go get github.com/wickra-lib/wickra-gym-go' },
-  { label: 'Java', lang: 'xml', code: '<!-- Maven Central -->\n<dependency>\n  <groupId>org.wickra</groupId>\n  <artifactId>wickra-gym</artifactId>\n  <version>0.1.3</version>\n</dependency>' },
+  { label: 'Java', lang: 'xml', code: '<!-- Maven Central -->\n<dependency>\n  <groupId>org.wickra</groupId>\n  <artifactId>wickra-gym</artifactId>\n  <version>0.1.4</version>\n</dependency>' },
   { label: 'R', lang: 'r', code: 'install.packages("wickragym", repos = "https://wickra-lib.r-universe.dev")' },
 ]
 </script>
