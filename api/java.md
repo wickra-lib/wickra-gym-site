@@ -9,7 +9,7 @@ byte-identical to every other language binding.
 <dependency>
   <groupId>org.wickra</groupId>
   <artifactId>wickra-gym</artifactId>
-  <version>0.1.6</version>
+  <version>0.2.0</version>
 </dependency>
 ```
 
