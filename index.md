@@ -29,8 +29,8 @@ features:
     title: "Deterministic rollouts"
     details: "The same seed and the same spec replay the identical episode, so a training run is reproducible rather than approximately repeatable."
   - icon: 🧩
-    title: "514 indicators as features"
-    details: "The feature tensor is drawn from the Wickra core's 514 streaming indicators, so a feature set is a list of names rather than code you maintain."
+    title: "495 indicators as features"
+    details: "The feature tensor is drawn from the 495 streaming indicators the backtest registry resolves, so a feature set is a list of names rather than code you maintain."
 ---
 
 <script setup>
